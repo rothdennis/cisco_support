@@ -1,5 +1,5 @@
 # cisco_support
-Implementation of the Cisco Support API
+Implementation of the [Cisco Support API Docs](https://developer.cisco.com/docs/support-apis/#!introduction-to-cisco-support-apis)
 
 ## How to
 
@@ -93,7 +93,3 @@ from cisco_support.software_suggestions import SS
 
 ss = SS(client_key, client_secret)
 ```
-
-## Links
-
-[Cisco Support API Docs](https://developer.cisco.com/docs/support-apis/#!introduction-to-cisco-support-apis)
