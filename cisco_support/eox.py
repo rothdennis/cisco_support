@@ -1,4 +1,5 @@
 import requests
+from cisco_support import utils
 
 class EoX:
 
@@ -11,28 +12,12 @@ class EoX:
         self.__verify = verify
         self.__proxies = proxies
 
-        token = self.__getToken(key, secret)      
+        token = utils.getToken(key, secret, verify, proxies)      
 
         self.__headers = {
             'Authorization': f'Bearer {token}',
             'Accept': 'application/json'
         }
-
-    def __getToken(self, client_id: str, client_secret: str) -> str:
-        url = 'https://cloudsso.cisco.com/as/token.oauth2'
-
-        params = {
-            'grant_type': 'client_credentials',
-            'client_id': client_id,
-            'client_secret': client_secret
-        }
-
-        headers = {
-            'Content-Type':'application/x-www-form-urlencoded'
-        }
-
-        r = requests.post(url=url, params=params, headers=headers, verify=self.__verify, proxies=self.__proxies)
-        return r.json()['access_token']
 
     def getByDates(self, startDate:str, endDate: str, pageIndex: int = 1, eoxAttrib: list = []) -> dict:
         """getByDates
