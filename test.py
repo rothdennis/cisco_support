@@ -18,8 +18,8 @@ client_secret = config['cisco_support']['client_secret']
 # Testing EoX
 eox = EoX(client_key, client_secret)
 
-# a = eox.getByDates('2021-01-31','2021-03-31')
-# print(json.dumps(a, indent=4))
+a = eox.getByDates('2021-01-01','2021-01-31')
+print(json.dumps(a, indent=4))
 
 # b = eox.getByProducsIDs(['15216-OADM1-35=', 'M92S1K9-1.3.3C'])
 # print(json.dumps(b, indent=4))
@@ -27,7 +27,7 @@ eox = EoX(client_key, client_secret)
 # c = eox.getBySerialNumbers(['FHK0933224R'])
 # print(json.dumps(c, indent=4))
 
-d = eox.getBySoftwareReleaseStrings(['12.4(15)T,IOS', '12.4(14)T,IOS'])
-print(json.dumps(d, indent=4))
+# d = eox.getBySoftwareReleaseStrings(['12.4(15)T,IOS', '12.4(14)T,IOS'])
+# print(json.dumps(d, indent=4))
 
 # Testing ...
