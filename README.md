@@ -7,6 +7,7 @@ Implementation of the Cisco Support API
 
 TBD
 ```py
+import json
 from cisco_support.automated_software_distribution import ASD
 
 asd = ASD(client_key, client_secret)
@@ -16,6 +17,7 @@ asd = ASD(client_key, client_secret)
 
 TBD
 ```py
+import json
 from cisco_support.bug import Bug
 
 bugs = Bug(client_key, client_secret)
@@ -25,6 +27,7 @@ bugs = Bug(client_key, client_secret)
 
 TBD
 ```py
+import json
 from cisco_support.case import Case
 
 cases = Case(client_key, client_secret)
@@ -33,6 +36,7 @@ cases = Case(client_key, client_secret)
 ### EoX
 
 ```py
+import json
 from cisco_support.eox import EoX
 
 eox = EoX(client_key, client_secret)
@@ -54,6 +58,7 @@ print(json.dumps(d, indent=4))
 
 TBD
 ```py
+import json
 from cisco_support.product_information import PI
 
 pi = PI(client_key, client_secret)
@@ -63,6 +68,7 @@ pi = PI(client_key, client_secret)
 
 TBD
 ```py
+import json
 from cisco_support.serial_number_information import SNI
 
 sni = SNI(client_key, client_secret)
@@ -72,6 +78,7 @@ sni = SNI(client_key, client_secret)
 
 TBD
 ```py
+import json
 from cisco_support.service_order_return import RMA
 
 rma = RMA(client_key, client_secret)
@@ -81,6 +88,7 @@ rma = RMA(client_key, client_secret)
 
 TBD
 ```py
+import json
 from cisco_support.software_suggestions import SS
 
 ss = SS(client_key, client_secret)
