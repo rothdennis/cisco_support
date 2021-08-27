@@ -15,7 +15,6 @@ asd = ASD(client_key, client_secret)
 
 ### Bug
 
-TBD
 ```py
 import json
 from cisco_support.bug import Bug
