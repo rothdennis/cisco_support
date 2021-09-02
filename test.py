@@ -79,7 +79,7 @@ client_secret = config['cisco_support']['client_secret']
 
 ### Product Information ###
 
-pi = PI(client_key, client_secret)
+# pi = PI(client_key, client_secret)
 
 # a = pi.getBySerialNumbers(['SPE181700LN','REF_CSJ07306405'])
 # print(json.dumps(a, indent=4))
@@ -87,6 +87,24 @@ pi = PI(client_key, client_secret)
 # b = pi.getByProductIDs(['UBR10012','ASR1001'])
 # print(json.dumps(b, indent=4))
 
-c = pi.getMDFInformationByProductIDs(['ASA5505-50-BUN-K9'])
-print(json.dumps(c, indent=4))
+# c = pi.getMDFInformationByProductIDs(['ASA5505-50-BUN-K9'])
+# print(json.dumps(c, indent=4))
 
+### Serial Number Information ###
+
+# nsi = SNI(client_key, client_secret)
+
+# a = nsi.getCoverageStatusBySerialNumbers(['FOC10220LK9'])
+# print(json.dumps(a, indent=4))
+
+# b = nsi.getCoverageSummaryByInstanceNumbers(['917280220'])
+# print(json.dumps(b, indent=4))
+
+# c = nsi.getCoverageSummaryBySerialNumbers(['SAL09232Q0Z','32964768','FOC0903N5J9','INM07501EC3','SWCAT1239A0CJ'])
+# print(json.dumps(c, indent=4))
+
+# d = nsi.getOrderableProductIDsBySerialNumbers(['FOC10220LK9'])
+# print(json.dumps(d, indent=4))
+
+# e = nsi.getOwnerCoverageStatusBySerialNumbers(['FOC0717W107','FOC11517LEX','FOC0737Y43K'])
+# print(json.dumps(e, indent=4))
