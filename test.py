@@ -108,3 +108,13 @@ client_secret = config['cisco_support']['client_secret']
 
 # e = nsi.getOwnerCoverageStatusBySerialNumbers(['FOC0717W107','FOC11517LEX','FOC0737Y43K'])
 # print(json.dumps(e, indent=4))
+
+### Service Order Return (RMA) ###
+
+# rma = RMA(client_key, client_secret)
+
+# a = rma.getByRMANumber('84894022')
+# print(json.dumps(a, indent=4))
+
+# b = rma.getByUserID(['svorma8'])
+# print(json.dumps(b, indent=4))
