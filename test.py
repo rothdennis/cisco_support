@@ -118,3 +118,25 @@ client_secret = config['cisco_support']['client_secret']
 
 # b = rma.getByUserID(['svorma8'])
 # print(json.dumps(b, indent=4))
+
+### Software Suggestion ###
+
+# ss = SS(client_key, client_secret)
+
+# a = ss.getSuggestedReleasesAndImagesByProductIDs(['ASR-903','CISCO2811','N7K-C7018'])
+# print(json.dumps(a, indent=4))
+
+# b = ss.getSuggestedReleasesByProductIDs(['ASR-903','N7KS1K9-404','CISCO2811', 'ONS-GX-2FC-MMI'])
+# print(json.dumps(b, indent=4))
+
+# c = ss.getCompatibleAndSuggestedSoftwareReleasesByProductID('ASR1013')
+# print(json.dumps(c, indent=4))
+
+# d = ss.getSuggestedReleasesAndImagesByMDFIDs(['283933147','283780951'])
+# print(json.dumps(d, indent=4))
+
+# e = ss.getSuggestedReleasesByMDFIDs(['283933147','283780951'])
+# print(json.dumps(e, indent=4))
+
+# f = ss.getCompatibleAndSuggestedSoftwareReleasesByMDFID('283795847')
+# print(json.dumps(f, indent=4))
