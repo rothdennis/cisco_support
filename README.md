@@ -98,7 +98,6 @@ print(json.dumps(c, indent=4))
 
 ### Serial Number to Information
 
-TBD
 ```py
 import json
 from cisco_support.serial_number_information import SNI
