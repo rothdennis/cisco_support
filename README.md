@@ -80,12 +80,20 @@ print(json.dumps(d, indent=4))
 
 ### Product Information
 
-TBD
 ```py
 import json
 from cisco_support.product_information import PI
 
 pi = PI(client_key, client_secret)
+
+a = pi.getBySerialNumbers(['SPE181700LN','REF_CSJ07306405'])
+print(json.dumps(a, indent=4))
+
+b = pi.getByProductIDs(['UBR10012','ASR1001'])
+print(json.dumps(b, indent=4))
+
+c = pi.getMDFInformationByProductIDs(['ASA5505-50-BUN-K9'])
+print(json.dumps(c, indent=4))
 ```
 
 ### Serial Number to Information

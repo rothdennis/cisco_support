@@ -76,3 +76,17 @@ client_secret = config['cisco_support']['client_secret']
 # c = cases.getByUserID(user_ids=['directcust4'], )
 
 #d = cases.getByContractID(contract_ids=['1234567'], date_created_from='2017-04-01T00:00:00Z', date_created_to='2017-04-30T23:59:59Z')
+
+### Product Information ###
+
+pi = PI(client_key, client_secret)
+
+# a = pi.getBySerialNumbers(['SPE181700LN','REF_CSJ07306405'])
+# print(json.dumps(a, indent=4))
+
+# b = pi.getByProductIDs(['UBR10012','ASR1001'])
+# print(json.dumps(b, indent=4))
+
+c = pi.getMDFInformationByProductIDs(['ASA5505-50-BUN-K9'])
+print(json.dumps(c, indent=4))
+
