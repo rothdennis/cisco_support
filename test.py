@@ -32,7 +32,7 @@ client_secret = config['cisco_support']['client_secret']
 
 ### Bug ###
 
-bug = Bug(client_key, client_secret)
+# bug = Bug(client_key, client_secret)
 
 # a = bug.getByIDs(['CSCdr72939'])
 # print(json.dumps(a, indent=4))
@@ -57,3 +57,22 @@ bug = Bug(client_key, client_secret)
 
 # h = bug.getByProductNameAndFixedInSoftwareRelease('Cisco Unified Communications Manager (CallManager)', ['10.5'])
 # print(json.dumps(h, indent=4))
+
+### Automated Software Distribution ###
+
+# asd = ASD(client_key, client_secret)
+
+# a = asd.getByProductIDAndRelease(pid='ASR10012XOC3POS-RF', currentReleaseVersion='5.4.3')
+# print(json.dumps(a, indent=4))
+
+### Case ###
+
+# cases = Case(client_key, client_secret)
+
+#a = cases.getCaseSummary(case_ids=['682299374'], sort_by='STATUS')
+
+#b = cases.getCaseDetails(['682299374'])
+
+# c = cases.getByUserID(user_ids=['directcust4'], )
+
+#d = cases.getByContractID(contract_ids=['1234567'], date_created_from='2017-04-01T00:00:00Z', date_created_to='2017-04-30T23:59:59Z')
