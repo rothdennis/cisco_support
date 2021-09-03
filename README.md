@@ -1,4 +1,4 @@
-# Cisco's Support APIs for Python
+# Cisco Support APIs for Python 🐍
 
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/rothdennis/cisco_support) Not approved yet!
 
