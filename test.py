@@ -60,16 +60,17 @@ client_secret = config['cisco_support']['client_secret']
 
 ### Automated Software Distribution ###
 
-# asd = ASD(client_key, client_secret)
+asd = ASD(client_key, client_secret)
 
-# a = asd.getByProductIDAndRelease(pid='ASR10012XOC3POS-RF', currentReleaseVersion='5.4.3')
-# print(json.dumps(a, indent=4))
+a = asd.getByProductIDAndRelease(pid='ASR10012XOC3POS-RF', currentReleaseVersion='5.4.3')
+print(json.dumps(a, indent=4))
 
 ### Case ###
 
-# cases = Case(client_key, client_secret)
+#cases = Case(client_key, client_secret)
 
 #a = cases.getCaseSummary(case_ids=['682299374'], sort_by='STATUS')
+#print(json.dumps(a, indent=4))
 
 #b = cases.getCaseDetails(['682299374'])
 

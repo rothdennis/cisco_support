@@ -33,9 +33,7 @@ class ASD:
         
         url = 'https://api.cisco.com/software/v4.0/metadata/pidrelease'
 
-        r = requests.get(url=url, data=json.dumps(data), headers=self.__headers, verify=self.__verify, proxies=self.__proxies)
-
-        print(r.content)
+        r = requests.post(url=url, params=data, headers=self.__headers, verify=self.__verify, proxies=self.__proxies)
 
         return r.json()
 
