@@ -29,7 +29,7 @@ pip install ...
 
 ### Automated Software Distribution
 
-The Automated Software Distribution service provides software information and download URLs to assist you in upgrading your device/application to the latest version. You can find software images, verify MD5 checksum values, and electronically sign EULA and K9 agreements - all critical activities when upgrading.
+> The Automated Software Distribution service provides software information and download URLs to assist you in upgrading your device/application to the latest version. You can find software images, verify MD5 checksum values, and electronically sign EULA and K9 agreements - all critical activities when upgrading.
 
 TBD
 
@@ -42,7 +42,7 @@ asd = ASD(client_key, client_secret)
 
 ### Bug
 
-The Bug API service provides access to Cisco defects (bugs) information. Customers and partners can request bug information for either specific bugs or lookup list of bugs at a product level. Bug API also allows lookup of bugs using keywords of interest.
+> The Bug API service provides access to Cisco defects (bugs) information. Customers and partners can request bug information for either specific bugs or lookup list of bugs at a product level. Bug API also allows lookup of bugs using keywords of interest.
 
 ```py
 import json
@@ -78,7 +78,7 @@ print(json.dumps(h, indent=4))
 
 ### Case
 
-The Case API service provides access to Cisco Support Case information. Using the Case API, customers and partners can request case information for either specific support cases or at an aggregate level (i.e. user, contract or customer level) using a variety of input parameters.
+> The Case API service provides access to Cisco Support Case information. Using the Case API, customers and partners can request case information for either specific support cases or at an aggregate level (i.e. user, contract or customer level) using a variety of input parameters.
 
 TBD
 ```py
@@ -90,7 +90,7 @@ cases = Case(client_key, client_secret)
 
 ### EoX
 
-The End of Life (EoX) service provides access to Cisco EoX product data. Customers and partners can request Cisco EoX product information for both hardware and software using a variety of input parameters.
+> The End of Life (EoX) service provides access to Cisco EoX product data. Customers and partners can request Cisco EoX product information for both hardware and software using a variety of input parameters.
 
 ```py
 import json
@@ -113,7 +113,7 @@ print(json.dumps(d, indent=4))
 
 ### Product Information
 
-The Product Information API service provides access to Cisco product information associated with device serial numbers or product ids.
+> The Product Information API service provides access to Cisco product information associated with device serial numbers or product ids.
 
 ```py
 import json
@@ -133,7 +133,7 @@ print(json.dumps(c, indent=4))
 
 ### Serial Number to Information
 
-The Serial Number to Information (SN2INFO) API service provides access to Cisco information associated with device serial numbers. Customers and partners can request orderable product identifier (PID), item description, warranty information and coverage status for set of serial numbers at a time.
+> The Serial Number to Information (SN2INFO) API service provides access to Cisco information associated with device serial numbers. Customers and partners can request orderable product identifier (PID), item description, warranty information and coverage status for set of serial numbers at a time.
 
 ```py
 import json
@@ -159,7 +159,7 @@ print(json.dumps(e, indent=4))
 
 ### Service Order Return (RMA)
 
-The Service Order Return (RMA) API service provides access to Return Material Authorization (RMA) information. Customers and partners can request returns information for either specific returns or at an aggregate level (i.e. user level) using a variety of input parameters.
+> The Service Order Return (RMA) API service provides access to Return Material Authorization (RMA) information. Customers and partners can request returns information for either specific returns or at an aggregate level (i.e. user level) using a variety of input parameters.
 
 ```py
 import json
@@ -176,7 +176,7 @@ print(json.dumps(b, indent=4))
 
 ### Software Suggestion
 
-The Software Suggestion API service provides access to Cisco suggested software based on stability, longevity, adoption rate and other factors for a growing list of Cisco products. Customers and partners can access Cisco suggested and other available software based on their product, feature upgrade needs and hardware configuration.
+> The Software Suggestion API service provides access to Cisco suggested software based on stability, longevity, adoption rate and other factors for a growing list of Cisco products. Customers and partners can access Cisco suggested and other available software based on their product, feature upgrade needs and hardware configuration.
 
 ```py
 import json
