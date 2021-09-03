@@ -18,7 +18,16 @@ To obtain access to the Cisco Support APIs you must assign someone from your org
 
 [Cisco API Console](https://apiconsole.cisco.com/)
 
-## Automated Software Distribution
+## Install 
+
+TBD
+```
+pip install ...
+```
+
+## Use cisco_support
+
+### Automated Software Distribution
 
 TBD
 ```py
@@ -28,7 +37,7 @@ from cisco_support.automated_software_distribution import ASD
 asd = ASD(client_key, client_secret)
 ```
 
-## Bug
+### Bug
 
 ```py
 import json
@@ -62,7 +71,7 @@ print(json.dumps(h, indent=4))
 
 ```
 
-## Case
+### Case
 
 TBD
 ```py
@@ -72,7 +81,7 @@ from cisco_support.case import Case
 cases = Case(client_key, client_secret)
 ```
 
-## EoX
+### EoX
 
 ```py
 import json
@@ -93,7 +102,7 @@ d = eox.getBySoftwareReleaseStrings(['12.4(15)T,IOS', '12.4(14)T,IOS'])
 print(json.dumps(d, indent=4))
 ```
 
-## Product Information
+### Product Information
 
 ```py
 import json
@@ -111,7 +120,7 @@ c = pi.getMDFInformationByProductIDs(['ASA5505-50-BUN-K9'])
 print(json.dumps(c, indent=4))
 ```
 
-## Serial Number to Information
+### Serial Number to Information
 
 ```py
 import json
@@ -135,7 +144,7 @@ e = nsi.getOwnerCoverageStatusBySerialNumbers(['FOC0717W107','FOC11517LEX','FOC0
 print(json.dumps(e, indent=4))
 ```
 
-## Service Order Return (RMA)
+### Service Order Return (RMA)
 
 ```py
 import json
@@ -150,7 +159,7 @@ b = rma.getByUserID(['svorma8'])
 print(json.dumps(b, indent=4))
 ```
 
-## Software Suggestion
+### Software Suggestion
 
 ```py
 import json
