@@ -2,7 +2,7 @@
 
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/rothdennis/cisco_support) Not approved yet!
 
-Implementation of the [Cisco Support API Docs](https://developer.cisco.com/docs/support-apis/#!introduction-to-cisco-support-apis)
+Python implementation of the [Cisco Support API](https://developer.cisco.com/docs/support-apis/#!introduction-to-cisco-support-apis)
 
 # What are the Cisco Support APIs?
 
