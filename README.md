@@ -4,11 +4,21 @@
 
 Implementation of the [Cisco Support API Docs](https://developer.cisco.com/docs/support-apis/#!introduction-to-cisco-support-apis)
 
+# What are the Cisco Support APIs?
+
+The Cisco Support APIs remove barriers to enterprise automation and can help end users shorten sales cycles and reduce operating expenses. This new way of delivering support information empowers customers and partners to use Cisco data in new and innovative ways to increase productivity and add new value to their business. The beauty of this approach is in its flexibility. Specifically, the Support APIs leverage Cisco's strength in delivering rich knowledge while providing options to customers and partners as to how they want to consume it. In addition, the Cisco Support API foundation provides the reference for future customer-facing and partner-facing web services and applications that will enable customers and partners to more effectively support Cisco products, networks and applications within their own business processes and systems.
+
+# Getting Started
+
+## Overview
+Cisco Support APIs are available only to Cisco Smart Net Total Care (SNTC) customers and Cisco Partner Support Service (PSS) partner. Access is gated by a role-based process that is administered by the customer or partner in the Cisco Services Access Manager tool. The remaining steps to gain access to the Cisco Support APIs depend on whether you are an SNTC customer or a PSS partner.
+
+## Onboarding Process
+To obtain access to the Cisco Support APIs you must assign someone from your organization as a Delegated Administrator. This individual is responsible for granting access to additional users and administrators within your organization. The process to onboard the Delegated Administrator depends on whether you are a Cisco Partner Service Support (PSS) partners or a Smart Net Total Care (SNTC) customer. Refer to the appropriate onboarding process here:
+
 [Cisco API Console](https://apiconsole.cisco.com/)
 
-## How to
-
-### Automated Software Distribution
+## Automated Software Distribution
 
 TBD
 ```py
@@ -18,7 +28,7 @@ from cisco_support.automated_software_distribution import ASD
 asd = ASD(client_key, client_secret)
 ```
 
-### Bug
+## Bug
 
 ```py
 import json
@@ -52,7 +62,7 @@ print(json.dumps(h, indent=4))
 
 ```
 
-### Case
+## Case
 
 TBD
 ```py
@@ -62,7 +72,7 @@ from cisco_support.case import Case
 cases = Case(client_key, client_secret)
 ```
 
-### EoX
+## EoX
 
 ```py
 import json
@@ -83,7 +93,7 @@ d = eox.getBySoftwareReleaseStrings(['12.4(15)T,IOS', '12.4(14)T,IOS'])
 print(json.dumps(d, indent=4))
 ```
 
-### Product Information
+## Product Information
 
 ```py
 import json
@@ -101,7 +111,7 @@ c = pi.getMDFInformationByProductIDs(['ASA5505-50-BUN-K9'])
 print(json.dumps(c, indent=4))
 ```
 
-### Serial Number to Information
+## Serial Number to Information
 
 ```py
 import json
@@ -125,7 +135,7 @@ e = nsi.getOwnerCoverageStatusBySerialNumbers(['FOC0717W107','FOC11517LEX','FOC0
 print(json.dumps(e, indent=4))
 ```
 
-### Service Order Return (RMA)
+## Service Order Return (RMA)
 
 ```py
 import json
@@ -140,7 +150,7 @@ b = rma.getByUserID(['svorma8'])
 print(json.dumps(b, indent=4))
 ```
 
-### Software Suggestion
+## Software Suggestion
 
 ```py
 import json
