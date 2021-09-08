@@ -1,11 +1,11 @@
-from cisco_support.bug import Bug
-from cisco_support.automated_software_distribution import ASD
-from cisco_support.case import Case
-from cisco_support.eox import EoX
-from cisco_support.product_information import PI
-from cisco_support.serial_number_information import SNI
-from cisco_support.service_order_return import RMA
-from cisco_support.software_suggestions import SS
+from cisco_support import Bug
+from cisco_support import EoX
+from cisco_support import ASD
+from cisco_support import Case
+from cisco_support import PI
+from cisco_support import SNI
+from cisco_support import RMA
+from cisco_support import SS
 
 import json
 from configparser import ConfigParser
@@ -31,7 +31,6 @@ client_secret = config['cisco_support']['client_secret']
 # print(json.dumps(d, indent=4))
 
 ### Bug ###
-
 # bug = Bug(client_key, client_secret)
 
 # a = bug.getByIDs(['CSCdr72939'])
@@ -60,10 +59,10 @@ client_secret = config['cisco_support']['client_secret']
 
 ### Automated Software Distribution ###
 
-asd = ASD(client_key, client_secret)
+# asd = ASD(client_key, client_secret)
 
-a = asd.getByProductIDAndRelease(pid='ASR10012XOC3POS-RF', currentReleaseVersion='5.4.3')
-print(json.dumps(a, indent=4))
+# a = asd.getByProductIDAndRelease(pid='ASR10012XOC3POS-RF', currentReleaseVersion='5.4.3')
+# print(json.dumps(a, indent=4))
 
 ### Case ###
 
