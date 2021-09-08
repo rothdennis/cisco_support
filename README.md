@@ -35,7 +35,7 @@ TBD
 
 ```py
 import json
-from cisco_support.automated_software_distribution import ASD
+from cisco_support import ASD
 
 asd = ASD(client_key, client_secret)
 ```
@@ -46,7 +46,7 @@ asd = ASD(client_key, client_secret)
 
 ```py
 import json
-from cisco_support.bug import Bug
+from cisco_support import Bug
 
 bugs = Bug(client_key, client_secret)
 
@@ -83,7 +83,7 @@ print(json.dumps(h, indent=4))
 TBD
 ```py
 import json
-from cisco_support.case import Case
+from cisco_support import Case
 
 cases = Case(client_key, client_secret)
 ```
@@ -94,7 +94,7 @@ cases = Case(client_key, client_secret)
 
 ```py
 import json
-from cisco_support.eox import EoX
+from cisco_support import EoX
 
 eox = EoX(client_key, client_secret)
 
@@ -117,7 +117,7 @@ print(json.dumps(d, indent=4))
 
 ```py
 import json
-from cisco_support.product_information import PI
+from cisco_support import PI
 
 pi = PI(client_key, client_secret)
 
@@ -137,7 +137,7 @@ print(json.dumps(c, indent=4))
 
 ```py
 import json
-from cisco_support.serial_number_information import SNI
+from cisco_support import SNI
 
 nsi = SNI(client_key, client_secret)
 
@@ -163,7 +163,7 @@ print(json.dumps(e, indent=4))
 
 ```py
 import json
-from cisco_support.service_order_return import RMA
+from cisco_support import RMA
 
 rma = RMA(client_key, client_secret)
 
@@ -180,7 +180,7 @@ print(json.dumps(b, indent=4))
 
 ```py
 import json
-from cisco_support.software_suggestions import SS
+from cisco_support import SS
 
 ss = SS(client_key, client_secret)
 
