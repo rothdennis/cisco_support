@@ -1,6 +1,10 @@
 # Cisco Support APIs for Python 🐍
 
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/rothdennis/cisco_support)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/rothdennis/cisco_support/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/rothdennis/cisco_support)](https://github.com/rothdennis/cisco_support/stargazers)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rothdennis/cisco_support)
+
 
 Python implementation of the [Cisco Support API](https://developer.cisco.com/docs/support-apis/#!introduction-to-cisco-support-apis)
 
