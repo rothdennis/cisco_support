@@ -1,11 +1,12 @@
 import setuptools
+import cisco_support
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="cisco_support_apis",
-    version="0.1",
+    name="cisco_support",
+    version=cisco_support.__version__,
     author="Dennis Roth",
     author_email="rothdennis92@gmail.com",
     description="Python implementation of the Cisco Support APIs",
