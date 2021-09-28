@@ -26,7 +26,7 @@ To obtain access to the Cisco Support APIs you must assign someone from your org
 
 TBD
 ```
-pip install ...
+pip install cisco-support
 ```
 
 ## Use cisco_support

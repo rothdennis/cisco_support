@@ -35,6 +35,8 @@ class ASD:
 
         r = requests.post(url=url, params=data, headers=self.__headers, verify=self.__verify, proxies=self.__proxies)
 
+        print(r.content)
+
         return r.json()
 
 

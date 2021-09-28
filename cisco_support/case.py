@@ -30,6 +30,8 @@ class Case:
         url = f'https://api.cisco.com/case/v3/cases/case_ids/{case_ids}'
         r = requests.get(url=url, headers=self.__headers, params=params, verify=self.__verify, proxies=self.__proxies)
 
+        print(r.content)
+
         return r.json()
 
     def getCaseDetails(self, case_id: str) -> dict:

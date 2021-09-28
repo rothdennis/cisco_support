@@ -31,10 +31,10 @@ client_secret = config['cisco_support']['client_secret']
 # print(json.dumps(d, indent=4))
 
 ### Bug ###
-bug = Bug(client_key, client_secret)
+# bug = Bug(client_key, client_secret)
 
-a = bug.getByIDs(['CSCdr72939'])
-print(json.dumps(a, indent=4))
+# a = bug.getByIDs(['CSCdr72939'])
+# print(json.dumps(a, indent=4))
 
 # b = bug.getByBaseProductIDs('WS-C3560-48PS-S', status='F', modified_date=5, severity=2, sort_by='modified_date')
 # print(json.dumps(b, indent=4))
@@ -66,10 +66,10 @@ print(json.dumps(a, indent=4))
 
 ### Case ###
 
-#cases = Case(client_key, client_secret)
+cases = Case(client_key, client_secret)
 
-#a = cases.getCaseSummary(case_ids=['682299374'], sort_by='STATUS')
-#print(json.dumps(a, indent=4))
+a = cases.getCaseSummary(case_ids=['682299374'], sort_by='STATUS')
+print(json.dumps(a, indent=4))
 
 #b = cases.getCaseDetails(['682299374'])
 
