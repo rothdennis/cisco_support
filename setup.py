@@ -3,6 +3,9 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 setuptools.setup(
     name="cisco_support",
     version="0.0.1",
@@ -20,7 +23,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "cisco_support"},
-    packages=setuptools.find_packages(where="cisco_support"),
+    package_dir={"": ""},
+    packages=setuptools.find_packages(where=""),
     python_requires=">=3.6",
 )
