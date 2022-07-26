@@ -20,7 +20,7 @@ class Case:
             'Accept': 'application/json',
         }
 
-    def getCaseSummary(self, case_ids: str, sort_by: str = 'UPDATED_DATE') -> dict:
+    def getCaseSummary(self, case_ids: list, sort_by: str = 'UPDATED_DATE') -> dict:
         params = {
             'sort_by': sort_by
         }
