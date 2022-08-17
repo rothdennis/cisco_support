@@ -41,7 +41,7 @@ class EoX:
 
         return r.json()
 
-    def getByProducsIDs(self, productID: list, pageIndex: int = 1) -> dict:
+    def getByProductIDs(self, productID: list, pageIndex: int = 1) -> dict:
         """getByProducsIDs
 
         Args:
