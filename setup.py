@@ -8,7 +8,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name="cisco_support",
-    version="0.2.0",
+    version="0.3.1",
     author="Dennis Roth",
     author_email="rothdennis92@gmail.com",
     description="Python implementation of the Cisco Support APIs",
