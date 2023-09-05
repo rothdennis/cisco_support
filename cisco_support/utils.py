@@ -1,7 +1,7 @@
 import requests
 
 def getToken(client_id: str, client_secret: str, verify: bool, proxies: dict) -> str:
-        url = 'https://cloudsso.cisco.com/as/token.oauth2'
+        url = 'https://id.cisco.com/oauth2/default/v1/token'
 
         params = {
             'grant_type': 'client_credentials',
