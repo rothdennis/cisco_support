@@ -1,0 +1,5 @@
+.idea
+sandbox.py
+dist/*.tar.gz
+src/*.egg-info
+venv

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel", "pep517"]
+build-backend = "setuptools.build_meta"
+
+[bumpver]
+current_version = "0.3.7"
+version_pattern = "MAJOR.MINOR.PATCH"
+
+[bumpver.file_patterns]
+"pyproject.toml" = [
+    'version = "{version}"',
+]
+
+[project]
+name = "cisco_support"
+description = "Python library to interact with Cisco Support APIs"
+readme = "README.md"
+version = "0.3.7"
+license = {file = "LICENSE"}
+dependencies = [
+    "requests"
+]
+keywords = ["cisco"]
+
+[project.urls]
+Homepage = "https://github.com/rothdennis/cisco_support"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/rothdennis/cisco_support.git"
+Issues = "https://github.com/rothdennis/cisco_support/issues"
