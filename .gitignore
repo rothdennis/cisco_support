@@ -1,5 +1,5 @@
 .idea
 sandbox.py
-dist/*.tar.gz
+dist
 src/*.egg-info
 venv
