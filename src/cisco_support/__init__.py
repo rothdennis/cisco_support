@@ -1,3 +1,4 @@
+from .automated_software_distribution import *
 from .bug import *
 from .case import *
 from .eox import *
