@@ -3,3 +3,4 @@ sandbox.py
 dist
 src/*.egg-info
 venv
+src/cisco_support/__pycache__
